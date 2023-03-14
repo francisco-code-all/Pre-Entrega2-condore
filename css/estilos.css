@@ -1,0 +1,151 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+}
+/**globales**/ 
+html {
+    font-size: 62.5;
+}
+body {
+    font-size: 16px;
+    font-family:  'krub', sans-serif;
+    background-color: lightcyan;
+    padding: 1px, 2px, 1px, 2px;
+    border: 1rem, 2rem;
+    border-radius: 1rem;
+}
+*,*::before, *:after {
+    box-sizing: inherit;
+}
+
+
+/** tipografia **/
+h1 {
+    font-size: 3.8rem;
+    text-align: center;
+}
+h2 {
+    font-size: 2.4rem;
+    text-align: center;
+    color: rgb(182, 31, 41)
+}
+h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: blue;
+}
+h4 {
+    font-size: larger;
+    color: green;
+}
+span {
+    color: royalblue;
+}
+
+.titulo span {
+    font-size: 2rem;
+}
+.ubicacion {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: goldenrod;
+}
+
+
+/**enlace de contacto**/
+.boton {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem, 3rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 70%;
+    text-align: center;
+}
+@media (min-width: 480px) {
+    .boton {
+    width: auto;
+    }
+}
+a {
+    color: red;
+}
+
+
+/**menu navegador**/
+.navegacion-principal {
+    background-color: rgb(9, 171, 163);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    font-weight: 700;
+    flex-direction: column;
+    
+}
+.navegacion-principal a {
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 1rem;
+    border-top: 1rem;
+    text-align: center;
+}
+.navegacion-principal a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+@media (min-width: 480px) {
+    .navegacion-principal {
+    flex-direction: row;}
+}
+
+
+/** imagen**/
+.work {
+    background-image: url(../img/work.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 18rem;
+    position: relative;
+    margin-bottom: 2rem, 3rem;
+
+}
+@media (max-width: 480px) {
+    .work {
+    width: auto;
+   }
+   
+}
+.contenedor {
+    text-align: center;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    background-color: #ffffff;
+}
+/** servicios **/
+@media (max-width: 480) {
+    .servicios {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+.todos {
+    background-color: #add8e6;
+}
+footer {
+    text-align: center;
+    font-style: oblique;
+    font-size: medium;
+    height: 3px;
+    margin-top: 4px;
+    color: crimson;
+}
+
